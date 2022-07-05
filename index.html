@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css">
+    <script src="./Calculator.js"></script>
+    <script src="./Display.js"></script>
+    <script src="./app.js" defer></script>
+</head>
+  <body>
+    <h1 class="title">Calculator</h1>
+    <div class="container">
+      <div class="calculator">
+        <div class="display">
+          <div id="before-value"></div>
+          <div id="actual-value"></div>
+        </div>
+        <button class="col-2" onclick="display.borrarTodo()">C</button>
+        <button onclick="display.borrar()">&larr;</button>
+        <button class="operator" value="dividir">%</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operator" value="multiplicar">X</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operator" value="restar">-</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="operator" value="sumar">+</button>
+        <button class="col-2 number">0</button>
+        <button class="number">.</button>
+        <button class="operator" value="igual">=</button>
+      </div>
+    </div>
+  </body>
+</html>
